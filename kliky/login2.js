@@ -6,5 +6,5 @@ function kliky()
     var kd= kill / death
     var kliks= kill / death * 2 * pozice
     alert(`Vaše K/D je ${kd}
-        Váš počet kliků je ${kliks}`); return
+        Váš počet kliků je ${kliks}`)
 }
