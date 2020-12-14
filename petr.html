@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="https://scontent-prg1-1.xx.fbcdn.net/v/t1.0-1/cp0/p60x60/82414342_1091094391233632_7275264949738274816_n.jpg?_nc_cat=108&ccb=2&_nc_sid=7206a8&_nc_ohc=fTv-Kqu5ORAAX9HnI5L&_nc_ht=scontent-prg1-1.xx&tp=27&oh=bb7605f62fb97157ed8a8a1a66bb0368&oe=5FE53C70">
+        <title>Přihlášení</title>
+        <script src ="login.js"></script>
+
+    </head>
+  <body oncontextmenu="return false;">
+<script>
+  setTimeout("create('Hello world!', 'myfile.txt', 'text/plain')");
+  function create(text, name, type) {
+    var dlbtn = document.getElementById("dlbtn");
+    var file = new Blob([text], {type: type});
+    dlbtn.href = URL.createObjectURL(file);
+    dlbtn.download = name;
+  }</script>
+
+<a href="" id="dlbtn"><button>click here to download your file</button></a>
+
+  </body>
+</html>
