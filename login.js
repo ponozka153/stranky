@@ -7,22 +7,22 @@ function validate()
             //window.location.href = "petr.html"
         }, 1);
     }
-    if(jméno === "kliky"&& heslo === "dominion"){
+    else if(jméno === "kliky"&& heslo === "dominion"){
       setTimeout(() => {
-          window.location.href = "dominion.html"
+          window.location.href = "./kliky/dominion.html"
       }, 1);
     }
-    if(jméno === "kliky"&& heslo === "brawls"){
+    else if(jméno === "kliky"&& heslo === "brawls"){
       setTimeout(() => {
           window.location.href = "brawls.html"
       }, 1);
     }
-    if(jméno === "kliky"&& heslo === "duels"){
+    else if(jméno === "kliky"&& heslo === "duels"){
       setTimeout(() => {
           window.location.href = "duels.html"
       }, 1);
-    }
-    if(jméno === "kliky"&& heslo === "custom"){
+    } 
+    else if(jméno === "kliky"&& heslo === "custom"){
       setTimeout(() => {
           window.location.href = "custom.html"
       }, 1);
