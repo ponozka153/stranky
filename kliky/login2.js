@@ -10,10 +10,10 @@ else if(čas > 12 && čas <= 18){
 else if(čas > 18 && čas <= 22){
     ahoj = "Dobrý večer ;)";
 }
-else if(čas > 22 && čas <= 0){
+else if(čas > 22 && čas <= 24){
     ahoj = "Dobrou noc <3"  ;
 }
-else if(čas >= 0 && čas <= 6){
+else if(čas > 24 && čas <= 6){
     ahoj = "Dobrou noc <3";
 } else {
     ahoj = 'yo shits broken yo!';
