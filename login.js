@@ -35,7 +35,7 @@ function validate()
     }
     else if(jméno === "kliky"&& heslo === "duels"){
       setTimeout(() => {
-          window.location.href = "duels.html"
+          window.location.href = "./kliky/duels.html"
       }, 1);
     } 
     else if(jméno === "kliky"&& heslo === "custom"){

@@ -25,7 +25,7 @@ show.textContent = ahoj;
 
 
 function kliky()
-{
+{ //dominiony
     var kill=document.getElementById("kill").value
     var death=document.getElementById("death").value
     var pozice=document.getElementById("position").value
@@ -42,14 +42,25 @@ function kliky()
     }
 }
 function kliky2()
-{
+{ //duely
     var kill=document.getElementById("kill").value
     var death=document.getElementById("death").value
-    var pozice=document.getElementById("position").value
+    var win=document.getElementById("win")
     var kd= kill / death
-    var kliks= kill / death * pozice
+    if(kd > 3){
+        alert(`Bruh, víc jak tři zářezů nejde mít v duelech`); return
+    } if (death > 4){
+        alert(`Bruh, víc jak 4 umrtí nejde mít v duelech`); return
+    } else {
+    var kliks= death * 5
+    if(win.checked == true){
+        var kliks2= death * 4
+        alert(`Vaše K/D je ${kd}
+        Váš počet kliků je ${kliks2}`)
+    } else {
     alert(`Vaše K/D je ${kd}
-        Váš počet kliků je ${kliks}`)  
+        Váš počet kliků je ${kliks}`)}
+    }
 }
 function kliky3()
 {
