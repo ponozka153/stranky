@@ -52,9 +52,9 @@ function kliky2()
     } if (death > 4){
         alert(`Bruh, víc jak 4 umrtí nejde mít v duelech`); return
     } else {
-    var kliks= death * 5
+    var kliks= kill / death * 8
     if(win.checked == true){
-        var kliks2= death * 4
+        var kliks2=kill / death * 3
         alert(`Vaše K/D je ${kd}
         Váš počet kliků je ${kliks2}`)
     } else {
