@@ -1,3 +1,19 @@
+
+var countDown = new Date("Dec 24, 2020 00:00:01").getTime();
+var intervalžejo = setInterval(function() {
+  var now = new Date().getTime();
+  var timeleft = countDown - now;
+      var show1 = document.getElementById("zpráva");
+  var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 *  60));
+  Vánoce = `Vánoce za: ${days} dní, ${hours} hodin, ${minutes} minut`
+  if(timeleft < 0){
+    clearInterval(intervalžejo)
+    Vánoce = "Vánoce jsou dnes tuuuu 😇🤭"
+  } show1.textContent = Vánoce
+  }, 1)
+
 function validate()
 {
     var jméno=document.getElementById("jméno").value

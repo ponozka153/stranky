@@ -23,6 +23,7 @@ var show = document.getElementById("zpráva");
 show.textContent = ahoj;
 
 
+
 function kliky()
 {
     var kill=document.getElementById("kill").value

@@ -65,3 +65,13 @@ border-color: yellow;
     background: rgb(0, 0, 0);
     color: rgba(241, 234, 234, 0.301);
 }
+
+.jez
+{
+    font-family: fantasy;
+    position: absolute;
+    color: palevioletred;
+    left: 37%;
+    top: 14%;
+    border: black;
+}
