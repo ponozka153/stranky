@@ -66,8 +66,15 @@ function kliky3()
 {
     var kill=document.getElementById("kill").value
     var death=document.getElementById("death").value
+    var win=document.getElementById("win")
     var kd= kill / death
-    var kliks = kd * 2
+    var kliks = kd * 2 * 6
+    if(win.checked == true){
+        var kliks2=kill / death * 4
+        alert(`Vaše K/D je ${kd}
+        Váš počet kliků je ${kliks2}`)
+    } else {
     alert(`Vaše K/D je ${kd}
         Váš počet kliků je ${kliks}`)  
+    }
 }
