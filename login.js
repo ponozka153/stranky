@@ -1,5 +1,5 @@
 
-var countDown = new Date("Dec 24, 2020 00:00:01").getTime();
+var countDown = new Date("Dec 24, 2020 18:00:00").getTime();
 var intervalžejo = setInterval(function() {
   var now = new Date().getTime();
   var timeleft = countDown - now;
