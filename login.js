@@ -1,17 +1,39 @@
 
-var countDown = new Date("Dec 24, 2020 18:00:00").getTime();
+
+  var countDown = new Date("Dec 31, 2020 23:59:59").getTime();
 var intervalžejo = setInterval(function() {
   var now = new Date().getTime();
   var timeleft = countDown - now;
-      var show1 = document.getElementById("zpráva");
-  var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 *  60));
-  Vánoce = `Vánoce za: ${days} dní, ${hours} hodin, ${minutes} minut`
+  var show1 = document.getElementById("zpráva");
+  var day = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+  var hour = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minute = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 *  60));
+  if(day === 1){
+    days = "1 den"
+  } else if(day === 2||day === 3||day === 4){
+    days = `${day} dny`
+  } else {
+    days = `${day} dnů`
+  }
+  if(hour === 1){
+    hours = "1 hodina"
+  } else if(hour === 2||hour === 3||hour === 4){
+    hours = `${hour} hodiny`
+  } else{
+    hours = `${hour} hodin`
+  }
+  if(minute === 1){
+    minutes = "1 minuta"
+  } else if(minute === 2||minute === 3||minute === 4){
+    minutes = `${minute} minuty`
+  } else {
+    minutes = `${minute} minut`
+  }
+  výsledek = `Kapitola 2: ${days}, ${hours}, ${minutes}`
   if(timeleft < 0){
+    výsledek = "Pohroma kapitola 2, je tu bejbyyyyy :)"
     clearInterval(intervalžejo)
-    Vánoce = "Vánoce jsou dnes tuuuu 😇🤭"
-  } show1.textContent = Vánoce
+  } show1.textContent = výsledek
   }, 1)
 
 function validate()
