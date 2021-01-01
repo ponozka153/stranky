@@ -1,10 +1,9 @@
+var show1 = document.getElementById("zpráva");
 
-
-  var countDown = new Date("Dec 31, 2020 23:59:59").getTime();
+  var countDown = new Date("Dec 31, 2021 23:59:59").getTime();
 var intervalžejo = setInterval(function() {
   var now = new Date().getTime();
-  var timeleft = countDown - now;
-  var show1 = document.getElementById("zpráva");
+  var timeleft = countDown - now; 
   var day = Math.floor(timeleft / (1000 * 60 * 60 * 24));
   var hour = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minute = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 *  60));
